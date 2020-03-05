@@ -3,6 +3,9 @@ languageConfig.title = "D";
 languageConfig.description =
   "D is a general-purpose programming language with static typing, systems-level access, and C-like syntax. With the D Programming Language, write fast, read fast, and run fast.";
 languageConfig.url = "https://dlang.org";
+languageConfig.founders = ["Walter Bright", "Andrei Alexandrescu"];
+languageConfig.developers = ["D Language Foundation"];
+languageConfig.years = ["2001"];
 languageConfig.extensions = [".d"];
 languageConfig.executeCommandLine = "dmd";
 languageConfig.printCommandLine = ""; //no console.log() needed to display result eg node -p "4+6"
