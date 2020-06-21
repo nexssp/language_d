@@ -15,8 +15,8 @@ languageConfig.builders = {};
 languageConfig.compilers = {
   dmd: {
     install: "scoop install dmd",
-    command: "dmd",
-    args: "<file> & <fileNoExt>",
+    command: "rdmd",
+    args: "<file>",
     help: ``,
   },
 };
