@@ -11,7 +11,17 @@ languageConfig.executeCommandLine = "dmd";
 languageConfig.printCommandLine = ""; //no console.log() needed to display result eg node -p "4+6"
 languageConfig.checkSyntax = "";
 languageConfig.interactiveShell = "dmd";
-languageConfig.builders = {};
+languageConfig.builders = {
+  ldc: {
+    install: "scoop install ldc",
+    build: function () {
+      return "ldc2.exe";
+    },
+    command: "ldc2.exe",
+    args: "<file> --of=<destinationFile> && <destinationFile>",
+    help: ``,
+  },
+};
 languageConfig.compilers = {
   dmd: {
     install: "scoop install dmd",
