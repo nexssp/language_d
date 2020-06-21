@@ -2,6 +2,11 @@
 
 D implementation for Nexss Programmer.
 
+## Nexss Programmer
+
+**Nexss Programmer Presentation** (Youtube video):  
+[![Nexss Programmer Presentation](https://img.youtube.com/vi/vs2tXMrZzzs/0.jpg)](https://www.youtube.com/watch?v=vs2tXMrZzzs)
+
 ## Templates
 
 ```sh
