@@ -13,12 +13,12 @@ languageConfig.checkSyntax = "";
 languageConfig.interactiveShell = "dmd";
 languageConfig.builders = {};
 languageConfig.compilers = {
-  node: {
+  dmd: {
     install: "scoop install dmd",
     command: "dmd",
-    args: "dmd <file> & <fileNoExt>",
-    help: ``
-  }
+    args: "<file> & <fileNoExt>",
+    help: ``,
+  },
 };
 languageConfig.errors = require("./nexss.d.errors");
 languageConfig.languagePackageManagers = {
@@ -28,24 +28,11 @@ languageConfig.languagePackageManagers = {
     search: "dub search",
     install: "dub install",
     uninstall: "dub uninstall",
-    help: "dub help",
-    version: "dub --version",
-    init: () => {
-      // if (
-      //   !require("fs").existsSync(
-      //     require("path").join(process.cwd(), "package.json")
-      //   )
-      // ) {
-      //   require("child_process").execSync("dub init", { stdio: "inherit" });
-      //   console.log("initialized npm project.");
-      // } else {
-      //   console.log("npm already initialized.");
-      // }
-    },
-    // if command not found in specification
-    // run directly on package manager
-    else: "dub"
-  }
+    help: "dub --help",
+    version: "dmd --version && dub --version",
+    init: "dub init .",
+    else: "dub",
+  },
 };
 
 module.exports = languageConfig;
