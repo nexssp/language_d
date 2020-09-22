@@ -11,7 +11,7 @@ languageConfig.compilers = {
   },
 };
 
-// Below is unnecessary
+// Below is unnecessary however you can use it later
 languageConfig.compilers.dmd.install = os.replacePMByDistro(
   languageConfig.compilers.dmd.install
 );
