@@ -1,0 +1,22 @@
+{
+  "name": "language_d.git",
+  "version": "1.0.0",
+  "description": "D implementation for Nexss Programmer.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexssp/language_d.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nexssp/language_d/issues"
+  },
+  "homepage": "https://github.com/nexssp/language_d#readme",
+  "dependencies": {
+    "@nexssp/os": "^1.0.15"
+  }
+}
